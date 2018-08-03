@@ -1,0 +1,59 @@
+{
+  "name": "guide-bubble",
+  "version": "1.0.0",
+  "description": "Wealth React Guide Bubble Component",
+  "keywords": [
+    "react",
+    "react-component",
+    "bubble",
+    "guide"
+  ],
+  "homepage": "https://github.com/missjing/guide-bubble",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:missjing/guide-bubble.git"
+  },
+  "bugs": {
+    "url": "https://github.com/missjing/guide-bubble/issues"
+  },
+  "files": [
+    "lib",
+    "es",
+    "assets/*.css"
+  ],
+  "licenses": "MIT",
+  "main": "./lib/index",
+  "module": "./es/index",
+  "config": {
+    "port": 8000
+  },
+  "scripts": {
+    "build": "rc-tools run build",
+    "compile": "rc-tools run compile --babel-runtime",
+    "gh-pages": "rc-tools run gh-pages",
+    "start": "rc-tools run server",
+    "pub": "rc-tools run pub",
+    "lint": "rc-tools run lint"
+  },
+  "devDependencies": {
+    "pre-commit": "1.x",
+    "rc-tools": "^7.0.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.8",
+    "rc-util": "^4.3.0"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "author": "crystal.cj",
+  "license": "MIT"
+}
